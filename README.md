@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# web-exercise-2
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+در این تمرین با استفاده از React یک پلتفرم ساده برای نقاشی کردن طراحی کرده‌ایم. در ادامه با توضیح هر بخش به توضیح ویژگی‌های این برنامه می‌پردازیم.
 
-## Available Scripts
+shapeCounts:
 
-In the project directory, you can run:
+برای شمارش شکل‌ها از آرایه shapes استفاده کرده و با استفاده از بروزرسانی آن نوار پایینی را نمایش می‌دهد.
 
-### `npm start`
+handleDrop:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+رفتار پیش‌فرض مرورگر را غیرفعال کرده و در هنگام کشیده شدن شکل به بوم فراخوانی شده و مختصات شکل را نسبت به بوم پیدا کرده و جایگذاری می‌کند.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+newShape:
 
-### `npm test`
+یک شکل جدید ایجاد کرده و آن را به شناسه‌ی مخصوص آن به آرایه‎‌ی shapes اضافه می‌کند.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+handleDoubleClick:
 
-### `npm run build`
+مختصات دابل کلیک را پیدا کرده و بعد از پاک کردن شکل آن را از آرایه shapes نیز حذف می‌کند.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+exportShapes & importShape:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+آرایه‌ی shapes به فایل json تبدیل شده و بصورت یک فایل دانلود می‌شود. و به هنگام import فایل json خوانده شده و شکل‌‌ها روی بوم قرار گرفته و به آرایه‌ی shapes نیز اضافه می‌شوند.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+drawShape:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+بر اساس type هر شکل در مختصات لازم در بوم آن را قرار داده. لازم به ذکر است همه‌ی شکل‌ها از یک رنگ استفاده می‌کنند.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+useEffect:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+با هربار بروزرسانی آرایه shapes بوم پاک شده و دوباره نقاشی می‌شود.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
